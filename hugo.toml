@@ -2,7 +2,7 @@
    # In terminal: hugo server --bind "0.0.0.0" 
    # Visit site: http://127.0.0.1:1313
 
-baseURL = 'https://example.org/'
+baseURL = 'https://silvier.org'
 locale = 'en-us'
 title = 'Silvier linings'
 
