@@ -1,0 +1,29 @@
+# how to preview
+   # In terminal: hugo server --bind "0.0.0.0" 
+   # Visit site: http://127.0.0.1:1313
+
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Silvier linings'
+
+[module]
+  [[module.imports]]
+    path = "github.com/imfing/hextra"
+
+[params]
+  description = "Hi, I'm Silvie Senauke. This is my blog."
+
+[[menu.main]]
+  name = "Blog"
+  pageRef = "/posts"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 2
+
+[[menu.main]]
+  name = "Craft Museum"
+  pageRef = "/craft museum"
+  weight = 3
