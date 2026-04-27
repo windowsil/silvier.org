@@ -1,0 +1,18 @@
+<div class="header-top">
+    <div class="header-top-left">
+        {{ partial "head/site-title.html" . }}
+        {{ partial "head/theme-switcher.html" . }}
+        {{ partial "head/social-icons.html" . }}
+    </div>
+    <div class="header-top-right">
+    </div>
+</div>
+
+<div class="site-description">
+    <p>I'm Silvie Senauke. I like to make weird little things, like this blog. Check out the craft museum to see some of the other things I’ve made.</p>
+</div>
+
+{{ $params := partial "params-helper.html" . }}
+{{ if or $params.enableMathGlobally .Params.math }}
+    {{ partial "features/mathjax.html" . }}
+{{ end }}

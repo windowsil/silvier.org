@@ -1,18 +1,22 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+
   <channel>
-    <title>Silvier linings – Tags</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Silvier linings</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Silvier Linings</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent blog posts on Silvier Linings</description>
+    
+    <generator>Hugo (https://gohugo.io)</generator>
+    
     <language>en-us</language>
     
-	  <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor></managingEditor>
     
+    <webMaster></webMaster>
     
-      
-        
-      
+    <lastBuildDate>Sun, 26 Apr 2026 19:53:22 -0500</lastBuildDate>
     
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

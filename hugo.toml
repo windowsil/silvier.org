@@ -2,28 +2,39 @@
    # In terminal: hugo server --bind "0.0.0.0" 
    # Visit site: http://127.0.0.1:1313
 
+# new post generation in command line: 
+    # hugo new content/posts/your-post-title.md
+
 baseURL = 'https://silvier.org'
-locale = 'en-us'
-title = 'Silvier linings'
+languageCode = 'en-us'
+title = 'Silvier Linings'
+theme = "anubis2"
 
-[module]
-  [[module.imports]]
-    path = "github.com/imfing/hextra"
+[pagination]
+  pagerSize = 5
 
-[params]
-  description = "Hi, I'm Silvie Senauke. This is my blog."
-
-[[menu.main]]
-  name = "Blog"
-  pageRef = "/posts"
-  weight = 1
-
-[[menu.main]]
-  name = "About"
-  pageRef = "/about"
-  weight = 2
+[params.author]
+  name = "Silvie Senauke"
 
 [[menu.main]]
   name = "Craft Museum"
-  pageRef = "/craft museum"
+  url = "/craft-museum/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
   weight = 3
+
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params.anubis2]
+  customcss = ["css/custom.css"]
+  enablecolorthemeswitcher = false
+  enablerssicon = false
+  enablesummary = true
+
+[params]
+  mainSections = ["posts"]

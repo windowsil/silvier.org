@@ -1,0 +1,24 @@
+<style>
+    .craft-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+    }
+    .craft-grid a img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  </style>
+  
+  <div class="craft-grid">
+    {{ range .Page.Pages }}
+      {{ $images := .Resources.Match "img/*" }}
+      {{ $image := index $images 0 }}
+      {{ if $image }}
+        <a href="{{ .Permalink }}">
+          <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>

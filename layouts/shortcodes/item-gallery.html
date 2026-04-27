@@ -1,0 +1,19 @@
+<style>
+    .item-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+    }
+    .item-grid img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  </style>
+  
+  <div class="item-grid">
+    {{ $images := .Page.Resources.Match "img/*" }}
+    {{ range $images }}
+      <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
+    {{ end }}
+  </div>
