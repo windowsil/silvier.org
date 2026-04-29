@@ -1,38 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-
-  <channel>
-    <title>Silvier Linings</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent blog posts on Silvier Linings</description>
-    
-    <generator>Hugo (https://gohugo.io)</generator>
-    
-    <language>en-us</language>
-    
-    <managingEditor></managingEditor>
-    
-    <webMaster></webMaster>
-    
-    <lastBuildDate>Sat, 25 Apr 2026 18:08:57 -0500</lastBuildDate>
-    
-    <atom:link href="http://localhost:1313/tags/parenting/index.xml" rel="self" type="application/rss+xml" />
-    
-
-    <item>
-      <title>Parenting Haikus, 4/20/26-4/26/26</title>
-      <link>http://localhost:1313/posts/2026-04-25_parenting-haikus/</link>
-      <pubDate>Sat, 25 Apr 2026 18:08:57 -0500</pubDate>
-      
-      <author></author>
-
-      
-      
-      
-      
-
-      <description>
-      A blissful four days
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Silvier Linings</title><link>https://silvier.org/</link><description>Recent blog posts on Silvier Linings</description><generator>Hugo (https://gohugo.io)</generator><language>en-us</language><managingEditor/><webMaster/><lastBuildDate>Sat, 25 Apr 2026 18:08:57 -0500</lastBuildDate><atom:link href="https://silvier.org/tags/parenting/index.xml" rel="self" type="application/rss+xml"/><item><title>Parenting Haikus, 4/20/26-4/26/26</title><link>https://silvier.org/posts/2026-04-25_parenting-haikus/</link><pubDate>Sat, 25 Apr 2026 18:08:57 -0500</pubDate><author/><description>
+A blissful four days
 With good strong long naps for him
 Me alive again
 *
@@ -50,11 +17,4 @@ singing. Babies coo.
 *
 He got his two month shots
 One Band-Aid on each leg
-Screamed quite loud, then slept
-
-      </description>
-      <guid isPermaLink="true">http://localhost:1313/posts/2026-04-25_parenting-haikus/</guid>
-    </item>
-    
-  </channel>
-</rss>
+Screamed quite loud, then slept</description><guid isPermaLink="true">https://silvier.org/posts/2026-04-25_parenting-haikus/</guid></item></channel></rss>
