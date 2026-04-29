@@ -5,6 +5,11 @@
 # new post generation in command line: 
     # hugo new content/posts/your-post-title.md
 
+# Pushing an update
+    # git add .
+    # git commit -m "[description of the updates]"
+    # git push
+
 baseURL = 'https://silvier.org'
 languageCode = 'en-us'
 title = 'Silvier Linings'
@@ -26,6 +31,10 @@ theme = "anubis2"
   url = "/about/"
   weight = 3
 
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 4
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -35,6 +44,7 @@ theme = "anubis2"
   enablecolorthemeswitcher = false
   enablerssicon = false
   enablesummary = true
+  customjs = ["https://www.instagram.com/embed.js"]
 
 [params]
   mainSections = ["posts"]

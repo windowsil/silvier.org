@@ -5,18 +5,6 @@
 {{ $machineDateFormat := "2006-01-02" }}
 
 <div class="post-info noselect">
-    {{ if .Params.date }}
-        <div class="post-date dt-published">
-            <time datetime="{{ .Params.date.Format $machineDateFormat }}">
-                {{- .Params.date.Format $dateFormat -}}
-            </time>
-            {{ if ne .Params.date .Params.lastMod -}}
-                [{{ i18n "lastMod" }} <time datetime="{{ .Params.lastMod.Format $machineDateFormat }}">
-                    {{- .Params.lastMod.Format $dateFormat -}}
-                </time>]
-            {{- end }}
-        </div>
-    {{ end }}
 
     <a class="post-hidden-url u-url" href="{{ .RelPermalink }}">{{ .RelPermalink }}</a>
     <a href="{{ site.BaseURL }}" class="p-name p-author post-hidden-author h-card" rel="me">{{ .Params.author | default site.Params.author }}</a>
@@ -35,7 +23,8 @@
             <ul class="post-tags">
                 {{ range $tag_name := .Params.tags }}
                     {{ $tag_url := (printf "/tags/%s" ($tag_name | urlize)) }}
-                    <li><a href="{{ $tag_url }}">{{ $tag_name }}</a></li>                {{ end }}
+                    <li><a href="{{ $tag_url }}">{{ $tag_name }}</a></li>                
+                {{ end }}
             </ul>
         {{ end }}
         {{ if .Params.authors }}

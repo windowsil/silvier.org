@@ -30,11 +30,9 @@
     </div>
 
     {{ $params := partial "params-helper.html" . }}
-    {{ if $params.enableSummary }}
-        <div class="content post-summary p-summary">
-            {{ .Summary | safeHTML }}
-        </div>
-    {{ end }}
+    <div class="content post-summary p-summary">
+        {{ .Content | safeHTML }}
+    </div>
     
     {{ if and (.Truncated) ($params.enableReadMoreButton) }}
         <div class="read-more">

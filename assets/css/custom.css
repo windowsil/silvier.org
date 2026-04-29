@@ -5,6 +5,15 @@ html {
   --card-border-color: transparent;
   --link-color: #cb769eff;
   --link-state-color: #7eb77fff;
+  --title-color: #484d6d;
+}
+
+a:not(.site-title a):not(.post-title a):not(.side-nav a):not(.post-tags li a) {
+  color: #cb769e !important;
+}
+
+a:not(.site-title a):not(.post-title a):not(.side-nav a):not(.post-tags li a):hover {
+  color: #7eb77f !important;
 }
 
 .post-summary a {
@@ -18,13 +27,23 @@ html {
 
 .site-title a:hover,
 .site-title a:focus,
-nav a:hover,
-nav a:focus,
 .post-title a:hover,
 .post-title a:focus {
-  color: inherit !important;
+  color: #484d6d !important;
   text-decoration: none !important;
   border-bottom: none !important;
+}
+
+.site-title a:hover,
+.site-title a:focus,
+.site-title a:active {
+  border-bottom: 1px solid transparent !important;
+}
+
+.side-nav a:hover,
+.side-nav a:focus,
+.side-nav a:active {
+  border-bottom: 1px solid transparent !important;
 }
 
 .post-card {
@@ -46,6 +65,10 @@ nav a:focus,
   margin-top: 0 !important;
   padding-top: 0 !important;
   text-align: left !important;
+}
+
+.post-title a {
+  color: #484d6d;
 }
 
 .post-tags {
@@ -78,8 +101,9 @@ html, body {
 }
 
 body {
-  background-color: #E5F4FE;
+  background-color: #e8f1fb;
   font-family: 'Plus Jakarta Sans', sans-serif !important;
+  color: #435058
 }
 
 .post-summary {
@@ -93,11 +117,18 @@ body {
   gap: 1rem;
 }
 
+.site-title a {
+  color: #484d6d;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .site-title::after {
   content: "things that interest and delight me";
   font-size: 1rem;
   font-weight: 700;
-  border-left: 3px solid var(--title-color);
+  color: #484d6d;
+  border-left: 3px solid #484d6d;
   padding-left: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -149,6 +180,61 @@ body {
   color: #999;
   margin-bottom: 0.5rem;
 }
+
+/* Mobile: move side-nav from fixed sidebar to inline flow */
+@media (max-width: 768px) {
+  .side-nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0 1rem 0;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px dashed #ccc;
+  }
+
+  .side-nav-label {
+    display: none;
+  }
+
+  /* Make body a flex column so side-nav can be reordered */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    order: 2;
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  .side-nav {
+    order: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #ffffff;
+  }
+
+  .site-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .site-title::after {
+    border-left: none;
+    border-top: 3px solid #484d6d;
+    padding-left: 0;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+
 /* CSS HEX 
 --iron-grey: #435058ff;
 --sky-blue: #97d2fbff;

@@ -31,10 +31,12 @@
     </div>
     <nav class="side-nav noselect">
         <span class="side-nav-label">explore</span>
+        {{ if not .IsHome }}
+            <a href="/">Blog</a>
+        {{ end }}
         {{ range site.Menus.main }}
             <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
         {{ end }}
-    </nav>
     </nav>
 </body>
 </body>
