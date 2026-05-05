@@ -3,7 +3,7 @@
 
   <channel>
     <title>Silvier Linings</title>
-    <link>http://localhost:1313/</link>
+    <link>https://silvier.org/</link>
     <description>Recent blog posts on Silvier Linings</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -16,12 +16,12 @@
     
     <lastBuildDate>Wed, 22 Apr 2026 13:16:52 -0500</lastBuildDate>
     
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://silvier.org/posts/index.xml" rel="self" type="application/rss+xml" />
     
 
     <item>
       <title>Parenting Haikus, 4/27/26-5/3/26</title>
-      <link>http://localhost:1313/posts/2026-05-04_parenting-haikus/</link>
+      <link>https://silvier.org/posts/2026-05-04_parenting-haikus/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 -0500</pubDate>
       
       <author></author>
@@ -32,7 +32,8 @@
       
 
       <description>
-       In the dark of the night
+      
+In the dark of the night
 he thrashed his body around
 I left the room
 *
@@ -53,13 +54,13 @@ he sleeps much more soundly than
 the same one but white
 
       </description>
-      <guid isPermaLink="true">http://localhost:1313/posts/2026-05-04_parenting-haikus/</guid>
+      <guid isPermaLink="true">https://silvier.org/posts/2026-05-04_parenting-haikus/</guid>
     </item>
     
 
     <item>
       <title>What&#39;s bringing me joy recently</title>
-      <link>http://localhost:1313/posts/2026-05-02-currently/</link>
+      <link>https://silvier.org/posts/2026-05-02-currently/</link>
       <pubDate>Sat, 02 May 2026 00:00:00 -0500</pubDate>
       
       <author></author>
@@ -76,13 +77,13 @@ Strange infant space suits for sleeping. First, the baby looks hilarious. Second
 Two nights in a row of five hours of sleep, and regular 2-hour naps. Was it because of the sleeping suit??
 
       </description>
-      <guid isPermaLink="true">http://localhost:1313/posts/2026-05-02-currently/</guid>
+      <guid isPermaLink="true">https://silvier.org/posts/2026-05-02-currently/</guid>
     </item>
     
 
     <item>
       <title>Bricks of Chicago Quilt</title>
-      <link>http://localhost:1313/posts/2026-04-26-bricks-of-chicago-quilt/</link>
+      <link>https://silvier.org/posts/2026-04-26-bricks-of-chicago-quilt/</link>
       <pubDate>Sun, 26 Apr 2026 19:53:22 -0500</pubDate>
       
       <author></author>
@@ -97,13 +98,13 @@ Two nights in a row of five hours of sleep, and regular 2-hour naps. Was it beca
 View this post on Instagram A post shared by Liz Barr (@lizbarrrr)
 
       </description>
-      <guid isPermaLink="true">http://localhost:1313/posts/2026-04-26-bricks-of-chicago-quilt/</guid>
+      <guid isPermaLink="true">https://silvier.org/posts/2026-04-26-bricks-of-chicago-quilt/</guid>
     </item>
     
 
     <item>
       <title>Parenting Haikus, 4/20/26-4/26/26</title>
-      <link>http://localhost:1313/posts/2026-04-25_parenting-haikus/</link>
+      <link>https://silvier.org/posts/2026-04-25_parenting-haikus/</link>
       <pubDate>Sat, 25 Apr 2026 18:08:57 -0500</pubDate>
       
       <author></author>
@@ -135,7 +136,7 @@ One Band-Aid on each leg
 Screamed quite loud, then slept
 
       </description>
-      <guid isPermaLink="true">http://localhost:1313/posts/2026-04-25_parenting-haikus/</guid>
+      <guid isPermaLink="true">https://silvier.org/posts/2026-04-25_parenting-haikus/</guid>
     </item>
     
   </channel>

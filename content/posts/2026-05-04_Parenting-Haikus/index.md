@@ -5,7 +5,7 @@ title = 'Parenting Haikus, 4/27/26-5/3/26'
 tags = ["parenting", "poems"]
 +++
 
-![](IMG_6088.jpg)
+![](/posts/2026-05-04_parenting-haikus/IMG_6088.jpg)
 
 In the dark of the night  
 he thrashed his body around  
