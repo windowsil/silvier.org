@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet href="/feed.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+
+  <channel>
+    <title>Silvier Linings</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent blog posts on Silvier Linings</description>
+    
+    <generator>Hugo (https://gohugo.io)</generator>
+    
+    <language>en-us</language>
+    
+    <managingEditor></managingEditor>
+    
+    <webMaster></webMaster>
+    
+    <lastBuildDate>Sat, 02 May 2026 00:00:00 -0500</lastBuildDate>
+    
+    <atom:link href="http://localhost:1313/tags/joy-lists/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    <item>
+      <title>What&#39;s bringing me joy recently</title>
+      <link>http://localhost:1313/posts/2026-05-02-currently/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 -0500</pubDate>
+      
+      <author></author>
+
+      
+      
+
+      
+
+      <description>
+      
+Perfect pickles. These are really good pickles. My mom remarked on them during her last visit.
+Strange infant space suits for sleeping. First, the baby looks hilarious. Second, he just seems kind of content in it—much more than in the swaddles we were using. He had become truly adept at wrenching his arms out of those swaddles.
+Two nights in a row of five hours of sleep, and regular 2-hour naps. Was it because of the sleeping suit??
+
+      </description>
+      <guid isPermaLink="true">http://localhost:1313/posts/2026-05-02-currently/</guid>
+    </item>
+    
+  </channel>
+</rss>
