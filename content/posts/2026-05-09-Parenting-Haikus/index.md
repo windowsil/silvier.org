@@ -5,7 +5,7 @@ title = 'Parenting Haikus, 5/4/26-5/9/26'
 tags = ["parenting", "poems"]
 +++
 
-![](/posts/2026-05-09_parenting-haikus/IMG_6293.jpg)
+![](/posts/2026-05-09-parenting-haikus/IMG_6293.jpg)
 
 He's now too big for  
 the car seat newborn insert  
