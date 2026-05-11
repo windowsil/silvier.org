@@ -1,7 +1,7 @@
 <style>
     .craft-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
       gap: 16px;
     }
     .craft-grid a img {
@@ -16,8 +16,10 @@
       {{ $images := .Resources.Match "img/*" }}
       {{ $image := index $images 0 }}
       {{ if $image }}
+        {{ $oriented := $image.Filter (images.AutoOrient) }}
+        {{ $thumb := $oriented.Fill "400x400 webp q85" }}
         <a href="{{ .Permalink }}">
-          <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
         </a>
       {{ end }}
     {{ end }}
