@@ -1,11 +1,12 @@
 <style>
     .item-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
       gap: 16px;
     }
     .item-grid img {
       width: 100%;
+      max-width: 100%;
       aspect-ratio: 1;
       object-fit: cover;
     }
@@ -14,6 +15,8 @@
   <div class="item-grid">
     {{ $images := .Page.Resources.Match "img/*" }}
     {{ range $images }}
-      <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
+      {{ $oriented := .Filter (images.AutoOrient) }}
+      {{ $resized := $oriented.Fit "1200x1200 webp q85" }}
+      <img src="{{ $resized.RelPermalink }}" alt="{{ .Name }}" loading="lazy" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
     {{ end }}
   </div>
