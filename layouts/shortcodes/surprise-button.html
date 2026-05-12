@@ -1,4 +1,4 @@
-{{ with hugo.Data.random_links.links }}
+{{ with site.Data.random_links.links }}
 <button class="random-link-btn" onclick="randomLinkGo()">stumble</button>
 <script>
     var _randomLinks = [{{ range . }}"{{ .url }}",{{ end }}];
