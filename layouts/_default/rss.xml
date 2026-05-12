@@ -51,7 +51,7 @@
       {{ end }}
 
       <description>
-      {{ .Summary | plainify | htmlEscape }}
+      {{ .Summary | plainify | htmlUnescape | htmlEscape }}
       </description>
       <guid isPermaLink="true">{{ .Permalink }}</guid>
     </item>

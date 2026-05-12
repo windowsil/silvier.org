@@ -1,0 +1,25 @@
+<article class="post-list post-card tag-summary">
+    <div class="post-header">
+        <header>
+            <h2 class="p-name post-title{{ if .Params.favorite }} favorite{{ end }}{{ if .Params.draft }} draft{{ end }}">
+                <a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " | markdownify }}</a>
+            </h2>
+        </header>
+        {{ if .Params.date }}
+          <div class="post-date">
+            <time>{{ .Params.date.Format "Jan 02, 2006" }}</time>
+          </div>
+        {{ end }}
+    </div>
+    {{ $snippet := .Description | default (.Plain | htmlUnescape | truncate 160) }}
+    {{ with $snippet }}
+    <div class="content post-summary p-summary">
+        <p>{{ . }}</p>
+    </div>
+    {{ end }}
+    {{ if .Truncated }}
+    <div class="read-more">
+        <a class="u-url" href="{{ .RelPermalink }}">Read more</a>
+    </div>
+    {{ end }}
+</article>
