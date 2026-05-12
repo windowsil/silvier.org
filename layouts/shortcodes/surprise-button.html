@@ -1,0 +1,10 @@
+{{ with site.Data.random_links.links }}
+<button class="random-link-btn" onclick="randomLinkGo()">stumble</button>
+<script>
+    var _randomLinks = [{{ range . }}"{{ .url }}",{{ end }}];
+    function randomLinkGo() {
+        var url = _randomLinks[Math.floor(Math.random() * _randomLinks.length)];
+        window.open(url, '_blank', 'noopener');
+    }
+</script>
+{{ end }}

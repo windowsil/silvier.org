@@ -3,7 +3,7 @@
 
   <channel>
     <title>Silvier Linings</title>
-    <link>http://localhost:60691/</link>
+    <link>https://silvier.org/</link>
     <description>Recent blog posts on Silvier Linings</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -15,7 +15,7 @@
     <webMaster></webMaster>
     
     
-    <atom:link href="http://localhost:60691/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://silvier.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

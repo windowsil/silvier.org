@@ -1,7 +1,9 @@
 +++
-title = "About"
+title = "Hey, it's me!"
 date = 2026-04-22
 lastmod = 2026-04-22
+hideDate = true
+layout = "stumble"
 description = "A little bit about Silvie Senauke and this blog"
 draft = false
 +++

@@ -23,7 +23,7 @@
                 </h1>
                 {{ partial "post-language-switcher.html" . }}
             </header>
-            {{ if .Params.date }}
+            {{ if and .Params.date (not .Params.hideDate) }}
                 <div class="post-date">
                     <time>{{ .Params.date.Format "Jan 02, 2006" }}</time>
                 </div>

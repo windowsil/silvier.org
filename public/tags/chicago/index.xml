@@ -3,7 +3,7 @@
 
   <channel>
     <title>Silvier Linings</title>
-    <link>http://localhost:60691/</link>
+    <link>https://silvier.org/</link>
     <description>Recent blog posts on Silvier Linings</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -16,12 +16,12 @@
     
     <lastBuildDate>Sun, 26 Apr 2026 19:53:22 -0500</lastBuildDate>
     
-    <atom:link href="http://localhost:60691/tags/chicago/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://silvier.org/tags/chicago/index.xml" rel="self" type="application/rss+xml" />
     
 
     <item>
       <title>Bricks of Chicago Quilt</title>
-      <link>http://localhost:60691/posts/2026-04-26-bricks-of-chicago-quilt/</link>
+      <link>https://silvier.org/posts/2026-04-26-bricks-of-chicago-quilt/</link>
       <pubDate>Sun, 26 Apr 2026 19:53:22 -0500</pubDate>
       
       <author></author>
@@ -36,7 +36,7 @@
 View this post on Instagram A post shared by Liz Barr (@lizbarrrr)
 
       </description>
-      <guid isPermaLink="true">http://localhost:60691/posts/2026-04-26-bricks-of-chicago-quilt/</guid>
+      <guid isPermaLink="true">https://silvier.org/posts/2026-04-26-bricks-of-chicago-quilt/</guid>
     </item>
     
   </channel>

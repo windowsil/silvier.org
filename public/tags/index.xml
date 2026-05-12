@@ -3,7 +3,7 @@
 
   <channel>
     <title>Silvier Linings</title>
-    <link>http://localhost:60691/</link>
+    <link>https://silvier.org/</link>
     <description>Recent blog posts on Silvier Linings</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -16,7 +16,7 @@
     
     <lastBuildDate>Sat, 09 May 2026 00:00:00 -0500</lastBuildDate>
     
-    <atom:link href="http://localhost:60691/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://silvier.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
