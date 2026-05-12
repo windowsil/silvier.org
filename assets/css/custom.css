@@ -277,6 +277,41 @@ body {
 }
 
 
+/* Surprise button on /wander page */
+@keyframes stumble-colors {
+  0%   { background-color: var(--canary-yellow); color: var(--paired-pink); }
+  33%  { background-color: var(--paired-pink);   color: var(--canary-yellow); }
+  66%  { background-color: var(--neon-ice);      color: var(--twilight-indigo); }
+  100% { background-color: var(--canary-yellow); color: var(--paired-pink); }
+}
+
+.random-link-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+  width: fit-content;
+  padding: 0.6rem 2rem;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  animation: stumble-colors 3s ease-in-out infinite;
+}
+
+.random-link-btn:hover,
+.random-link-btn:focus {
+  outline: none;
+  animation-duration: 0.8s;
+}
+
+.stumble-invite {
+  text-align: left;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 4rem;
+  color: var(--post-info-color);
+}
+
 /*
  * RETIRED PALETTE
  * --iron-grey:        #435058ff
