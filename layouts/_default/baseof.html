@@ -45,6 +45,19 @@
             <input type="submit" value="→ notify me" />
         </form>
     </nav>
-</body>
+    <div class="visit-counter">Total visits: <span id="visit-count">{{ "·" }}</span></div>
+    <script type="module">
+        const el = document.getElementById("visit-count");
+        const cached = localStorage.getItem("visit-count");
+        if (cached) el.textContent = Number(cached).toLocaleString();
+        import { playhtml } from "https://unpkg.com/playhtml@2.10.0/dist/playhtml.es.js";
+        await playhtml.init({ room: "visits" });
+        const counter = playhtml.createPageData("total-visits", { count: 0 });
+        counter.onUpdate((data) => {
+            el.textContent = data.count.toLocaleString();
+            localStorage.setItem("visit-count", data.count);
+        });
+        counter.setData((draft) => { draft.count += 1; });
+    </script>
 </body>
 </html>
