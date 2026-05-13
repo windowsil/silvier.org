@@ -312,6 +312,71 @@ body {
   color: var(--post-info-color);
 }
 
+.subscribe-nav-label {
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.subscribe-form input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.25rem 0.4rem;
+  font-size: 0.75rem;
+  font-family: inherit;
+  border: 1px solid var(--neon-ice);
+  color: var(--twilight-indigo);
+  background: white;
+  outline: none;
+}
+
+.subscribe-form input[type="email"]:focus {
+  border-color: var(--paired-pink);
+}
+
+.subscribe-form input[type="submit"] {
+  background-color: var(--canary-yellow);
+  color: var(--paired-pink);
+  border: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0.25rem 0.4rem;
+  text-align: center;
+}
+
+.subscribe-form input[type="submit"]:hover {
+  background-color: var(--paired-pink);
+  color: var(--canary-yellow);
+}
+
+@media (max-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .subscribe-nav-label {
+    display: none;
+  }
+
+  .subscribe-form input[type="email"] {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .subscribe-form input[type="submit"] {
+    white-space: nowrap;
+  }
+}
+
 /*
  * RETIRED PALETTE
  * --iron-grey:        #435058ff
